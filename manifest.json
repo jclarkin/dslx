@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "Dslx",
+  "version": "1.0",
+
+  "description": "Apply dyslexia assisting font to current webpage",
+
+  "icons": {
+    "48": "icons/eye.svg",
+    "96": "icons/eye.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://nothing/*"],
+      "js": ["dslx.js"],
+      "css": ["dslx.css"]
+    }
+  ]
+
+}
